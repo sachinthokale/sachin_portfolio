@@ -1,0 +1,108 @@
+.admin-panel {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #001219;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-panel-container {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+}
+.admin-panel-container > h4 {
+  margin: 2vmax;
+  letter-spacing: 15px;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.admin-panel-container > h4 > p {
+  transition: all 0.5s;
+}
+.admin-panel-container > h4 > p:hover {
+  transform: translateY(-10px);
+}
+.admin-panel-container > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4vmax;
+  padding-top: 0;
+}
+.admin-panel-container > form > a {
+  background-color: #fafafa;
+  padding: 2vmax;
+  font: 400 2rem "Roboto" sans-serif;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 220px;
+  margin: 2vmax;
+  transition: all 0.5s;
+}
+.admin-panel-container > form > a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+  transform: scale(1.1);
+}
+.admin-panel-container > form > button {
+  width: 50%;
+  padding: 1vmax;
+  margin: 2vmax;
+}
+.admin-panel-container > form > button:hover {
+  background-color: black;
+}
+.admin-panel-input {
+  width: 50%;
+  padding: 1vmax 2vmax;
+  border: 1px solid #ccc;
+  outline: none;
+  margin: 2vmax;
+  box-sizing: border-box;
+  font: 100 1rem "Roboto", sans-serif;
+  border-radius: 30px;
+}
+.admin-panel-skill {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin-panel-skill > div {
+  display: flex;
+  align-items: center;
+  margin: 2vmax;
+}
+.admin-panel-skill > div > p {
+  font: 400 1.5rem "Roboto", sans-serif;
+  margin-right: 2vmax;
+  color: rgba(24, 24, 24, 0.815);
+}
+.admin-panel-fileInput::-webkit-file-upload-button {
+  width: 100%;
+  border-radius: 30px;
+  padding: 1vmax;
+  color: white;
+  background-color: hsl(250, 100%, 69%);
+  border: none;
+  font: 100 1rem "Roboto", sans-serif;
+}
+.admin-panel-about > fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid black;
+}
+.admin-panel-about {
+  width: 100%;
+}
+.admin-panel-about > fieldset > legend {
+  margin: 2vmax;
+  font: 400 2rem "Roboto";
+}

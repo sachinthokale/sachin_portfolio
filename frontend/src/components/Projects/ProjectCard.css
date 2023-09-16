@@ -1,0 +1,209 @@
+.project-card {
+  width: 80%;
+
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.712);
+
+  /* border: 1px solid black; */
+  display: flex;
+  margin: 2vmax;
+  border-radius: 10px;
+  transform: translateX(-100vw);
+  animation: projectCardAnimation 1s ease-in-out forwards 0.5s;
+  /* box-shadow: 0px 5px 15px gray; */
+  /* border: 2px solid green; */
+  padding: 10px;
+}
+.project-card-a {
+  /* background-position: center; */
+  background-size: cover;
+
+  /* -webkit-filter: blur(8px); */
+  width: 80%;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.712);
+  /* border: 1px solid black; */
+  display: flex;
+  margin: 2vmax;
+  flex-direction: column;
+  border-radius: 10px;
+  transform: translateX(-100vw);
+  animation: projectCardAnimation 1s ease-in-out forwards 0.5s;
+  box-shadow: 0px 5px 15px gray;
+  /* border: 2px solid green; */
+  padding: 10px;
+}
+
+.project-card > div {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+}
+
+.project-card > div:first-child::after {
+  content: "VIEW DEMO";
+  width: 100%;
+  height: 10%;
+  font: 100 2rem "Roboto";
+  text-align: center;
+  /* background-color: hsl(250, 100%, 75%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card > div:first-child > h5 {
+  text-align: center;
+  padding: 2vmax;
+  /* background-color: black; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.project-card > div:last-child {
+  padding: 3vmax;
+  /* background-color: black; */
+  width: 60%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.project-card > div:last-child > h4 {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.desc {
+  border: 3px solid black;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 200px;
+}
+
+.project-card > div:last-child > p {
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  text-align: right;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.project-card > div:last-child > h6 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: right;
+}
+
+.project-image {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 300px;
+  /* background-color: chocolate; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vmax;
+  /* overflow: hidden; */
+}
+
+.project-image > img {
+  /* min-width: 200px; */
+  width: 80%;
+  height: 200px;
+}
+
+.project-card:nth-child(even) {
+  transform: translateX(100vw);
+  animation: projectCardAnimation 1s ease-in-out forwards 1s;
+}
+
+@keyframes projectCardAnimation {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    /* box-shadow: 0px 5px 15px gray; */
+  }
+
+  .project-card > div:first-child > h5 {
+    text-align: center;
+    padding: 1.5vmax;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+
+  .project-card > div:last-child {
+    padding: 2vmax;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    /* border: 1px solid black; */
+    display: flex;
+    width: 100%;
+  }
+
+  .project-card > div:last-child > h4 {
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 2vmax;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+
+    margin-bottom: 4px;
+  }
+
+  .project-card > div > h5 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    letter-spacing: 4px;
+    font-size: 2.4vmax;
+    /* border: 1px solid black; */
+  }
+  .project-card > div > span {
+    /* border: 1px solid black; */
+    padding: 4px;
+  }
+
+  .project-card > div:last-child > p {
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    text-align: left;
+    font-size: 1.3vmax;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+
+  .project-card > div:last-child > h6 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: left;
+    font-size: 1.5vmax;
+  }
+  .project-image > img {
+    /* min-width: 200px; */
+    width: 95%;
+    height: 200px;
+  }
+}

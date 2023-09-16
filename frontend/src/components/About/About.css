@@ -1,0 +1,186 @@
+.about-container {
+  min-height: 100vh;
+  background-color: #001219;
+  border-bottom: 1px solid gray;
+}
+
+.about-container-1 {
+  background-color: white;
+  width: 55%;
+  height: 70vh;
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: right;
+  padding: 2vmax;
+}
+
+.xyz > p {
+  /* border: 1px solid black; */
+
+  width: 93%;
+  /* border: 1px solid black; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  word-spacing: 6px;
+  font-size: 1.2vmax;
+}
+
+.about-container-2 > div > p {
+  font-family: "Roboto";
+  /* text-align: right; */
+  letter-spacing: 3px;
+  /* word-spacing: 5px; */
+  /* line-height: 30px; */
+  color: rgb(15, 15, 15, 0.822);
+  font-size: 1vmax;
+  /* width: 30%; */
+}
+
+.about-container-1 > p {
+  font-family: "Roboto";
+  text-align: right;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  line-height: 60px;
+  color: rgb(15, 15, 15, 0.822);
+  font-size: 1.4vmax;
+  width: 30%;
+}
+
+.about-container-2 {
+  width: 60%;
+  min-height: 36vmax;
+  background: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* background-color: red; */
+  /* color: black; */
+  /* border: 2px solid red; */
+  /* padding: 2vmax; */
+  /* border-right: 1px solid black; */
+  position: absolute;
+  bottom: 0;
+  right: 600px;
+  transform: translateX(-100vw) translateY(-10%);
+
+  animation: aboutAnimation 1s ease-in forwards;
+  box-shadow: 0px 0px 15px #001219;
+}
+
+.about-container-2 > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 1vmax; */
+  color: rgb(17, 17, 17, 0.712);
+  text-align: center;
+  /* border: 1px solid black; */
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin: 1vmax;
+  min-height: 27vmax;
+  /* background-color: teal; */
+}
+.about-container-2 > div > p {
+  /* border: 1px solid black; */
+  margin-bottom: 15px;
+}
+
+.about-avatar {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.about-avatar > img {
+  width: inherit;
+  height: 280px;
+}
+
+@keyframes aboutAnimation {
+  to {
+    transform: translateX(20%) translateY(-10%);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border: none;
+
+    /* border: 10px solid red; */
+  }
+
+  .about-container-1 {
+    width: 100%;
+    display: none;
+  }
+
+  .about-container-2 {
+    width: 100%;
+    display: flex;
+    /* position: relative; */
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    left: 1px;
+    height: 80vh;
+  }
+
+  .xyz {
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 120px;
+
+    align-self: center;
+    /* height: 500px; */
+  }
+  .about-container-2 > div > p {
+    /* border: 1px solid black; */
+    margin-bottom: 5px;
+  }
+
+  .about-container-2 > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 6px solid black; */
+    margin-top: -90px;
+  }
+
+  @keyframes aboutAnimation {
+    to {
+      transform: translateX(0%) translateY(0%);
+    }
+  }
+
+  .about-avatar {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-avatar > img {
+    width: 100px;
+    height: 140px;
+  }
+}
