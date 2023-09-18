@@ -30,7 +30,7 @@ const ProjectCard = ({
     <>
       <div className="project-card-a">
         <a href={url} className="project-card" target="blank">
-          <div>
+          <div className="project-image-div">
             <div className="project-image">
               <img src={projectImage} alt="Projects" />
             </div>

@@ -1,99 +1,90 @@
 .skill-desc-container {
-    /* border: 1px solid red; */
-    max-width: 200px;
-    max-height: 200px;
-    display: flex;
-    flex-direction: column;
+  /* border: 1px solid red; */
+  max-width: 200px;
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
 
-    align-items: center;
-    overflow: auto;
-    transition: all 0.5s ease-in-out;
-    transition: width 0.3s height 0.3s ease-in;
-    box-shadow: 0px 5px 15px rgba(122, 122, 122, 0.35);
+  align-items: center;
+  overflow: auto;
+  transition: all 0.5s ease-in-out;
+  transition: width 0.3s height 0.3s ease-in;
+  box-shadow: 0px 5px 15px rgba(122, 122, 122, 0.35);
 }
 
 .webBanner {
-    position: relative;
-    max-height: 200px;
-    width: 200px;
-    display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
-    border: 1px solid white;
-    overflow: hidden;
-    /* transition: width 1s ease; */
-    background-color: #f3e4df;
-    color: black;
-    box-shadow: 0px 5px 15px rgba(122, 122, 122, 0.35);
+  position: relative;
+  max-height: 200px;
+  width: 200px;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  border: 1px solid white;
+  overflow: hidden;
+  /* transition: width 1s ease; */
+  background-color: #f3e4df;
+  color: black;
+  box-shadow: 0px 5px 15px rgba(122, 122, 122, 0.35);
 }
 
-.webBanner>img {
-    max-width: 200px;
-    max-height: 200px;
-
+.webBanner > img {
+  max-width: 200px;
+  max-height: 200px;
 }
-
-
 
 .skill-desc-container:hover {
-    max-width: 300px;
-    max-height: 300px;
+  max-width: 300px;
+  max-height: 300px;
 
-    .bannerInfo {
-        display: block;
-    }
+  .bannerInfo {
+    display: block;
+  }
 
-    .webBanner {
-        display: none;
-    }
-
+  .webBanner {
+    display: none;
+  }
 }
-
-
 
 .bannerInfo {
-    width: 80%;
-    /* border: 3px solid red; */
-    overflow: auto;
-    padding: 5px;
-    display: none;
-
-
+  width: 80%;
+  /* border: 3px solid red; */
+  overflow: auto;
+  padding: 5px;
+  display: none;
 }
 
-.bannerInfo>span {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    word-spacing: 5px;
-    letter-spacing: 2px;
+.bannerInfo > span {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  word-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 .bannerInfo::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .skill-desc-container::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 @media screen and(max-width : 900px) {
+  .webBanner {
+    width: 300px;
+    height: 300px;
+  }
+
+  .skill-desc-container:hover {
+    max-width: 350px;
+    max-height: 300px;
+    overflow: visible;
+
+    .bannerInfo {
+      display: block;
+    }
+
     .webBanner {
-        width: 300px;
-        height: 300px;
+      display: none;
     }
-
-    .skill-desc-container:hover {
-        max-width: 350px;
-        max-height: 300px;
-        overflow: visible;
-
-        .bannerInfo {
-            display: block;
-        }
-
-        .webBanner {
-            display: none;
-        }
-
-    }
-
+  }
 }
