@@ -13,11 +13,13 @@ import { getUser, loadUser } from "./redux/actions/user";
 import AdminPanel from "./components/admin/AdminPanel";
 import Timeline from "./components/admin/Timeline";
 import Projectupdate from "./components/admin/Projectupdate";
+import Lottie from "lottie-react";
+import loadingAnimation from "./loadingAnimation.json";
 
 function App() {
   const dispatch = useDispatch();
   const { isAuthenticated } = useSelector((state) => state.login);
-  const { loading, user } = useSelector((state) => state.user);
+  const { user, loading } = useSelector((state) => state.user);
 
   useEffect(() => {
     dispatch(getUser());
@@ -28,7 +30,19 @@ function App() {
   return (
     <Router>
       {loading ? (
-        <div>loading...</div>
+        <div
+          style={{
+            // backgroundColor: "red",
+            // border: "1px solid black",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+            backgroundColor: "black",
+          }}
+        >
+          <Lottie animationData={loadingAnimation} />
+        </div>
       ) : (
         <>
           <Header />
