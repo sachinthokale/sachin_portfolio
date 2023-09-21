@@ -20,13 +20,16 @@ const Footer = () => {
       </div>
       <div className="social-media">
         <Typography variant="h6">Social Media</Typography>
-        <a href="https://github.com/sachinthokale?tab=repositories">
+        <a
+          href="https://github.com/sachinthokale?tab=repositories "
+          target="blank"
+        >
           <GitHubIcon />
         </a>
         <a href="https://www.instagram.com/" target="blank">
           <InstagramIcon />
         </a>
-        <a href="www.linkedin.com/in/sachin-thokale-39bb1320b">
+        <a href="www.linkedin.com/in/sachin-thokale-39bb1320b" target="blank">
           <LinkedInIcon />
         </a>
       </div>
